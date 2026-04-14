@@ -17,8 +17,6 @@ export default function TabLayout() {
           backgroundColor: AbletonColors.tabBar,
           borderTopColor: AbletonColors.cardBorder,
           borderTopWidth: 1,
-          height: 60,
-          paddingBottom: 8,
           paddingTop: 8,
         },
         tabBarLabelStyle: {

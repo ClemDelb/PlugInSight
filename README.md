@@ -1,50 +1,71 @@
-# Welcome to your Expo app 👋
+<div align="center">
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<br />
 
-## Get started
+# PlugInSight
 
-1. Install dependencies
+**Référence mobile des plugins natifs Ableton Live**
 
-   ```bash
-   npm install
-   ```
+Explorez, comprenez et maîtrisez les 40+ instruments, effets audio et effets MIDI intégrés à Ableton Live 12 — avec captures officielles, descriptions détaillées et filtres par catégorie.
 
-2. Start the app
+<br />
 
-   ```bash
-   npx expo start
-   ```
+![Ableton Live](https://img.shields.io/badge/Ableton_Live-12-FF6B00?style=flat-square&logoColor=white)
+![React Native](https://img.shields.io/badge/React_Native-Expo-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-Android_|_iOS-lightgrey?style=flat-square)
 
-In the output, you'll find options to open the app in a
+<br />
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+<img src="assets/screenshots/Screenshot_20260414_173634.png" width="270" />
+&nbsp;&nbsp;&nbsp;
+<img src="assets/screenshots/Screenshot_20260414_173655.png" width="270" />
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+<br /><br />
 
-## Get a fresh project
+</div>
 
-When you're ready, run:
+---
+
+## Fonctionnalités
+
+- **40+ plugins** référencés — Instruments, Audio FX, MIDI FX
+- **Captures officielles** Ableton Live 12 pour chaque plugin
+- **Recherche** par nom, description ou tag
+- **Filtres** par catégorie avec compteurs en temps réel
+- **Design** fidèle à l'interface Ableton — dark mode, orange signature
+- **Descriptions** détaillées en français pour chaque plugin
+
+## Stack
+
+- [Expo](https://expo.dev) + [Expo Router](https://expo.github.io/router) (file-based routing)
+- [React Native](https://reactnative.dev) avec TypeScript
+- [expo-image](https://docs.expo.dev/versions/latest/sdk/image/) pour le chargement optimisé des images
+- [react-native-safe-area-context](https://github.com/th3rdwave/react-native-safe-area-context)
+
+## Lancer le projet
 
 ```bash
-npm run reset-project
+npm install
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Puis ouvrir dans [Expo Go](https://expo.dev/go), un émulateur Android ou un simulateur iOS.
 
-## Learn more
+## Structure
 
-To learn more about developing your project with Expo, look at the following resources:
+```
+app/
+  (tabs)/
+    plugins.tsx     # Écran principal
+data/
+  plugins.ts        # Données des 40+ plugins
+constants/
+  theme.ts          # Palette Ableton
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+<div align="center">
+  <sub>Projet non affilié à Ableton AG. Images © Ableton AG.</sub>
+</div>
