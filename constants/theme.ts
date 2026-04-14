@@ -1,41 +1,14 @@
 /**
- * Below are the colors that are used in the app. The colors are defined in the light and dark mode.
- * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
+ * Ableton-inspired color palette and typography constants.
  */
 
 import { Platform } from 'react-native';
 
-const tintColorLight = '#0a7ea4';
-const tintColorDark = '#fff';
-
-export const Colors = {
-  light: {
-    text: '#11181C',
-    background: '#fff',
-    tint: tintColorLight,
-    icon: '#687076',
-    tabIconDefault: '#687076',
-    tabIconSelected: tintColorLight,
-  },
-  dark: {
-    text: '#ECEDEE',
-    background: '#151718',
-    tint: tintColorDark,
-    icon: '#9BA1A6',
-    tabIconDefault: '#9BA1A6',
-    tabIconSelected: tintColorDark,
-  },
-};
-
 export const Fonts = Platform.select({
   ios: {
-    /** iOS `UIFontDescriptorSystemDesignDefault` */
     sans: 'system-ui',
-    /** iOS `UIFontDescriptorSystemDesignSerif` */
     serif: 'ui-serif',
-    /** iOS `UIFontDescriptorSystemDesignRounded` */
     rounded: 'ui-rounded',
-    /** iOS `UIFontDescriptorSystemDesignMonospaced` */
     mono: 'ui-monospace',
   },
   default: {
@@ -51,3 +24,51 @@ export const Fonts = Platform.select({
     mono: "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
   },
 });
+
+export const AbletonColors = {
+  // Backgrounds
+  background: '#1A1A1A',
+  backgroundSecondary: '#222222',
+  card: '#2A2A2A',
+  cardBorder: '#333333',
+  tabBar: '#111111',
+
+  // Accent
+  orange: '#FF6B00',
+  orangeLight: '#FF8C33',
+  orangeDim: 'rgba(255, 107, 0, 0.15)',
+
+  // Category accents
+  instrument: '#FF6B00',
+  audioEffect: '#3A8FD6',
+  midiEffect: '#9B59B6',
+
+  // Text
+  textPrimary: '#FFFFFF',
+  textSecondary: '#999999',
+  textMuted: '#555555',
+
+  // Utility
+  white: '#FFFFFF',
+  black: '#000000',
+  separator: '#2E2E2E',
+};
+
+export const Colors = {
+  light: {
+    text: AbletonColors.textPrimary,
+    background: AbletonColors.background,
+    tint: AbletonColors.orange,
+    icon: AbletonColors.textSecondary,
+    tabIconDefault: AbletonColors.textSecondary,
+    tabIconSelected: AbletonColors.orange,
+  },
+  dark: {
+    text: AbletonColors.textPrimary,
+    background: AbletonColors.background,
+    tint: AbletonColors.orange,
+    icon: AbletonColors.textSecondary,
+    tabIconDefault: AbletonColors.textSecondary,
+    tabIconSelected: AbletonColors.orange,
+  },
+};

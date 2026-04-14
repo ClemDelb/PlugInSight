@@ -31,6 +31,7 @@ yarn-error.*
 *.pem
 
 # local env files
+.env
 .env*.local
 
 # typescript
@@ -40,4 +41,12 @@ app-example
 
 # generated native folders
 /ios
-/android
+/.idea/
+/.vscode/
+/.claude/
+/.ai/
+/keystore/
+keystore/
+android/gradle.properties
+android/local.properties
+/.vscode/
